@@ -60,7 +60,7 @@ $txt->create("mytxtfile.txt",$txt_data);
 It returns error when; it's not a txt file or file already exists.
 
 ### Read
-With this function you can read opened txt file. Also with this function you can directly write (echo) all txt data and replace all txt lines (\n) to the <br> easily. But both of them are optional.
+With this function you can read opened txt file. Also with this function you can directly write (echo) all txt data and replace all txt lines (\n) to the &lt;br&gt; easily. But both of them are optional.
 
 Simle example
 ```php

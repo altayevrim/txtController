@@ -16,7 +16,7 @@ With this php class you can easily control and manage your all txt files.
 **[Delete](#delete)**  
 **[Get Line](#get-line)**  
 **[Delete Line](#delete-line)**  
-**[Edit Line](#edit-line)**  
+**[Change Line](#change-line)**  
 
 ### Initialization
 To utilize this class, first import class.txtController.php into your project, and require it.

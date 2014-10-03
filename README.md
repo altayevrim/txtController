@@ -1,9 +1,7 @@
 txtController
 =============
 
-A php txt control class
-
-With this php class you can easily control and manage your all txt files.
+With this php class you can easily control and manage your all txt files. Save your time!
 
 ### Table of Contents
 **[Initialization](#initialization)**  

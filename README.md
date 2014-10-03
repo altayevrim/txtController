@@ -5,6 +5,19 @@ A php txt control class
 
 With this php class you can easily control and manage your all txt files.
 
+### Table of Contents
+**[Initialization](#initialization)**  
+**[Catching Errors](#catching-errors)**  
+**[Open](#open)**  
+**[Create](#create)**  
+**[Read](#read)**  
+**[Change](#change)**  
+**[Append](#append)**  
+**[Delete](#delete)**  
+**[Get Line](#get-line)**  
+**[Delete Line](#delete-line)**  
+**[Edit Line](#edit-line)**  
+
 ### Initialization
 To utilize this class, first import class.txtController.php into your project, and require it.
 
@@ -114,6 +127,16 @@ $txt->get_line($line_number); //It returns 6th line to me.
 ```
 It returns error when; there is no opened txt file or line does not exist.
 
+### Delete Line
+Deletes a specified line. So you can delete just a specified line. Don't forget; first line's, line number is 0 :)
+
+Example
+```php
+$line_number = 5;
+$txt->del_line($line_number); //It deletes 6th line. It's gone..
+```
+It returns error when; there is no opened txt file or line does not exist.
+
 ### Change Line
 Changes a specified line. So you can change just a specified line. Don't forget; first line's, line number is 0 :)
 
@@ -122,15 +145,5 @@ Example
 $line_number = 5;
 $new_data = "This is my new data!";
 $txt->change_line($line_number, $new_data); //It changes 6th line with our new data.
-```
-It returns error when; there is no opened txt file or line does not exist.
-
-### Delete Line
-Deletes a specified line. So you can delete just a specified line. Don't forget; first line's, line number is 0 :)
-
-Example
-```php
-$line_number = 5;
-$txt->del_line($line_number); //It deletes 6th line. It's gone..
 ```
 It returns error when; there is no opened txt file or line does not exist.

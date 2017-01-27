@@ -1,7 +1,8 @@
 <?php
 /**
  * txtController
- * 
+
+* 
  * @author    Evrim Altay KOLUAÇIK <evrimaltay@gmail.com>
  * @copyright Copyright (c) Evrim Altay KOLUAÇIK, 2014
  * @link      https://github.com/txtcontroller/txtcontroller
@@ -11,7 +12,8 @@
 
 class txtController{
 	/**
-     * Variable which holds txt file path.
+
+* Variable which holds txt file path.
      *
      * @var string
      */ 
@@ -20,7 +22,8 @@ class txtController{
 	/**
      * If any error occurs, system will use this variable to stop.
      *
-     * @var boolean
+
+* @var boolean
      */ 
 	private static $stop = FALSE;
 	
@@ -43,6 +46,9 @@ class txtController{
    */
 	private static function name_check($path){
 		$name = substr($path,-4);
+		// We can't force anyone to use only txt files right? Freedom is good..
+		return true;
+		
 		if($name == ".txt"){
 			return TRUE;
 		}else{
